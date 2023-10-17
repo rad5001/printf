@@ -5,17 +5,18 @@
  * @format: string character.
  * Return: the number of characters printed
  */
-int _printf(const char *format, ...)
+nt _printf(const char *format, ...)
 {
 	int count = 0;
+	va_list list;
+	va_start(list, format);
 	
-	while(*format != '\0')
+	while(format[count] != '\0')
 	{
-		if(*format != ' ' && *format != '\t' && *format != '\n')
+		if(format[count] != ' ' && format[count] != '\t' && format[count] != '\n')
 		{
 			count++;
 		}
-		format++;
 	}
 	return count;
 }
