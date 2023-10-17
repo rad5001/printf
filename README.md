@@ -1,2 +1,1 @@
-# printf
-Alx printif teams project
+0. function that produces output according to a format.
