@@ -5,7 +5,7 @@
  * @format: string character.
  * Return: the number of characters printed
  */
-nt _printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	int count = 0;
 	va_list list;
