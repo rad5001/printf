@@ -9,6 +9,7 @@ nt _printf(const char *format, ...)
 {
 	int count = 0;
 	va_list list;
+
 	va_start(list, format);
 	
 	while(format[count] != '\0')
@@ -18,5 +19,6 @@ nt _printf(const char *format, ...)
 			count++;
 		}
 	}
+	va_end(list);
 	return count;
 }
